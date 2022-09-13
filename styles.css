@@ -1,0 +1,143 @@
+:root {
+    --red: #EA5E5E;
+    --yellow: #f7ba32;
+    --blue: #56b3b4;
+    --background: #1a2b34;
+    --gray: #334651;
+    --pink: pink;
+    --unit:10px;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    padding: 100px
+}
+
+.container {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--unit);
+    transition: all 1000ms ease;
+    align-items: center;
+
+}
+
+.row {
+    height: var(--unit);
+    display: flex;
+    flex-direction: row;
+    gap: var(--unit);
+    transition: all 1000ms ease;
+}
+
+.row-1 {
+    padding-left: 60px;
+    transform: translateX(calc(-1 * var(--translation-1, 10%)));
+}
+.row-2 {
+    transform: translateX(var(--translation-2, 20%));
+    padding-right: 10px;
+}
+.row-3 {
+    transform: translateX(calc(-1 * var(--translation-2, 20%)));
+}
+.row-4 {
+    padding-left: 10px;
+    transform: translateX(var(--translation-3, 30%));
+
+}
+.row-5 {
+    transform: translateX(calc(-1 * var(--translation-3, 30%)));
+}
+.row-6 {
+    transform: translateX(var(--translation-3, 30%));
+}
+.row-7 {
+    transform: translateX(calc(-1 * var(--translation-3, 30%)));
+}
+.row-8 {
+    transform: translateX(var(--translation-2, 20%));
+}
+.row-9 {
+    transform: translateX(calc(-1 * var(--translation-2, 20%)));
+}
+.row-10 {
+    transform: translateX(var(--translation-1, 10%));
+}
+.row-11 {
+    padding-left: 20px;
+    transform: translateX(calc(-1 * var(--translation-1, 10%)))
+}
+.row-12 {
+    padding-right: 50px;
+    transform: translateX(var(--translation-1, 10%))
+    }
+.row-13 {
+    transform: translateX(calc(-1 * var(--translation-1, 10%)))
+}
+
+
+
+.cell {
+    height: 100%;
+    width: calc(var(--size, 2px) * var(--unit));
+    background-color: var(--gray);
+    border-radius: 1000px;
+}
+
+.cell.size-2{--size:2;}
+
+.cell.size-3 {--size: 3;}
+
+.cell.size-4 {--size: 4;}
+
+.cell.size-5 {--size: 5;}
+
+.cell.size-6 {--size: 6;}
+
+.cell.size-7 {--size: 7;}
+
+.cell.size-8 {--size: 8;}
+
+.cell.size-9 {--size: 9;}
+
+.cell.size-9 {--size: 10;}
+
+.cell.size-10 {--size: 10;}
+
+.cell.size-11 {--size: 11;}
+
+.cell.size-12 {--size: 12;}
+
+.cell.size-13 {--size: 13;}
+
+.cell.size-14 {--size: 14;}
+
+.cell.size-15 {--size: 15;}
+
+.cell.size-16 {--size: 16;}
+
+.cell.size-17 {--size: 17;}
+
+.cell.size-18 {--size: 18;}
+
+.cell.size-19 {--size: 19;}
+
+.cell.size-20 {--size: 20;}
+
+.red {
+    background-color: var(--red);
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.blue {
+    background-color: var(--blue);
+}
+.pink {
+    background-color: var(--pink);
+}
