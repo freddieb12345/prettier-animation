@@ -2,16 +2,14 @@
     --red: #EA5E5E;
     --yellow: #f7ba32;
     --blue: #56b3b4;
-    --background: #1a2b34;
-    --gray: #334651;
+    --background: #feeeee;
+    --gray: #2424241f;
     --pink: pink;
     --unit:10px;
 }
 
 body {
     background-color: var(--background);
-    margin: 0;
-    padding: 100px
 }
 
 .container {
@@ -32,53 +30,13 @@ body {
     transition: all 1000ms ease;
 }
 
-.row-1 {
-    padding-left: 60px;
-    transform: translateX(calc(-1 * var(--translation-1, 10%)));
+.row:nth-child(n) {
+    transform: translateX(calc(1 * var(--translation-1, 10%)))
 }
-.row-2 {
-    transform: translateX(var(--translation-2, 20%));
-    padding-right: 10px;
-}
-.row-3 {
-    transform: translateX(calc(-1 * var(--translation-2, 20%)));
-}
-.row-4 {
-    padding-left: 10px;
-    transform: translateX(var(--translation-3, 30%));
 
-}
-.row-5 {
-    transform: translateX(calc(-1 * var(--translation-3, 30%)));
-}
-.row-6 {
-    transform: translateX(var(--translation-3, 30%));
-}
-.row-7 {
-    transform: translateX(calc(-1 * var(--translation-3, 30%)));
-}
-.row-8 {
-    transform: translateX(var(--translation-2, 20%));
-}
-.row-9 {
-    transform: translateX(calc(-1 * var(--translation-2, 20%)));
-}
-.row-10 {
-    transform: translateX(var(--translation-1, 10%));
-}
-.row-11 {
-    padding-left: 20px;
+.row:nth-child(2n) {
     transform: translateX(calc(-1 * var(--translation-1, 10%)))
 }
-.row-12 {
-    padding-right: 50px;
-    transform: translateX(var(--translation-1, 10%))
-    }
-.row-13 {
-    transform: translateX(calc(-1 * var(--translation-1, 10%)))
-}
-
-
 
 .cell {
     height: 100%;
